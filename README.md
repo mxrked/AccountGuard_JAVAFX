@@ -1,4 +1,4 @@
-# AccountGuard_SWING
+# AccountGuard_JAVAFX
 
 ----------------------
 SETTING UP THE PROGRAM
@@ -9,6 +9,6 @@ SETTING UP THE PROGRAM
 3. Connect to using the following:
    - Server Authentication: Windows Authentication
    - Login: localhost 
-4. Create a new database called "AccountGuard_SWING".
+4. Create a new database called "AccountGuard_JAVAFX".
 5. Create a new query and copy and paste the "Database.sql" contents into the quert and execute it. Now the table for the program has been created.
 6. Work in progress....
