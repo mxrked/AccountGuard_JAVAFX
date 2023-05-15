@@ -18,7 +18,7 @@ public class AddAccountApplication extends Application {
         stage.setTitle("AccountGuard - Add Account Window");
 
         // Adding icon
-        String iconPath = "https://raw.githubusercontent.com/mxrked/AccountGuard_JAVAFX/main/src/assets/imgs/lock-logo.png";
+        String iconPath = "https://raw.githubusercontent.com/mxrked/AccountGuard_JAVAFX/master/src/assets/imgs/lock-logo.png";
         Image icon = new Image(iconPath);
         stage.getIcons().add(icon);
 
