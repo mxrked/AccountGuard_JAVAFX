@@ -3,8 +3,6 @@ package accountguard_javafx.accountguard_javafx;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,6 +16,13 @@ public class StartController {
     @FXML
     private Button viewAccountsWindowBtn;
 
+    @FXML
+    private Button exitCloseBtn;
+
+    @FXML
+    protected void exitClose() throws IOException {
+        System.exit(0);
+    }
     @FXML
     protected void openAddAccountWindow() throws IOException {
 
