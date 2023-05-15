@@ -33,9 +33,26 @@ public class AddAccountApplication extends Application {
 
         stage.setScene(scene);
 
-
+        // Handle the close request event
+        stage.setOnCloseRequest(event -> {
+            enterStartWindow(stage);
+        });
 
         stage.show();
+    }
+
+    private void enterStartWindow(Stage currentStage) {
+        // Create a new instance of StartApplication
+        StartApplication startApplication = new StartApplication();
+        try {
+            // Start the StartApplication
+            startApplication.start(new Stage());
+
+            // Close the current AddAccountApplication window
+            currentStage.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
