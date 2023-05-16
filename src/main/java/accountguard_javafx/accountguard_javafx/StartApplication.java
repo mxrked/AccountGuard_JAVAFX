@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -13,6 +14,9 @@ public class StartApplication extends Application {
 
     private double xOffset = 0;
     private double yOffset = 0;
+
+    private String topBtnsBGColor = "#79B600";
+    private String topBtnsHoverBGColor = "#527C00";
 
     @Override
     public void start(Stage stage) throws IOException {
