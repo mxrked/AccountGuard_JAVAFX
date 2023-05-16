@@ -1,0 +1,9 @@
+.top-btn {
+  -fx-background-color: #79B600;
+  -fx-text-fill: white;
+  -fx-border: none;
+}
+
+.top-btn:hover {
+  -fx-background-color: #527C00;
+}
