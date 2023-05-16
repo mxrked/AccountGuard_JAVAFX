@@ -19,6 +19,7 @@ public class StartController {
     @FXML
     private Button exitCloseBtn;
 
+
     @FXML
     protected void exitClose() throws IOException {
         System.exit(0);
