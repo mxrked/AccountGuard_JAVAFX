@@ -1,10 +1,12 @@
 package accountguard_javafx.accountguard_javafx;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
-import javafx.scene.paint.Color;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -14,9 +16,6 @@ public class StartApplication extends Application {
 
     private double xOffset = 0;
     private double yOffset = 0;
-
-    private String topBtnsBGColor = "#79B600";
-    private String topBtnsHoverBGColor = "#527C00";
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -43,9 +42,12 @@ public class StartApplication extends Application {
         // Applying resize bug fix
         setWindowDragListeners(stage);
 
+        // Adding logo
+
         // Showing the window
         stage.show();
     }
+
 
     // This fixes the launch window resize issue
     private void setWindowDragListeners(Stage stage) {
