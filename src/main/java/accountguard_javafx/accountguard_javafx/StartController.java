@@ -19,6 +19,8 @@ public class StartController {
     @FXML
     private Button exitCloseBtn;
 
+    @FXML
+    private Button infoBtn;
 
     @FXML
     protected void exitClose() throws IOException {
@@ -84,6 +86,23 @@ public class StartController {
         currentStage.hide();
 
     }
+    @FXML
+    protected void openInfoDialog() throws IOException {
+        // Adding the FXML file to loader
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/accountguard_javafx/accountguard_javafx/info-dialog.fxml"));
 
+        // Setting the new scene
+        InfoDialog infoDialog = new InfoDialog();
+        Stage newStage = new Stage();
+        infoDialog.start(newStage);
+        Stage currentStage = (Stage) infoBtn.getScene().getWindow();
+
+        newStage.setX(currentStage.getX());
+        newStage.setY(currentStage.getY());
+
+        // Hiding/Showing windows
+        currentStage.hide();
+    }
 
 }
