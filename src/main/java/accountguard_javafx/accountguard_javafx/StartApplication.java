@@ -42,8 +42,6 @@ public class StartApplication extends Application {
         // Applying resize bug fix
         setWindowDragListeners(stage);
 
-        // Adding logo
-
         // Showing the window
         stage.show();
     }
